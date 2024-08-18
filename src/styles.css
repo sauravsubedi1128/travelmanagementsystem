@@ -1,0 +1,445 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  color: #000;
+}
+
+p {
+  font-size: 14px;
+  color: #000;
+}
+
+a {
+  color: #004a7c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366; /* Fixed color code format */
+  color: white;
+  padding: 15px 20px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #FFFFFF; /* Default text color */
+  text-decoration: none; /* Removes the default underline */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+  padding: 5px 10px; /* Adds some padding for better hover effect */
+  border-radius: 5px; /* Rounds the corners of the background */
+}
+
+.navbar ul li a:hover {
+  color: #003366; /* Changes text color on hover */
+  background-color: #87CEFA; /* Adds a background color on hover for contrast */
+}
+
+
+
+/* Banner Styles */
+.banner-slide {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.banner-slide h2 {
+  font-size: 36px;
+}
+
+/* Top Cities */
+.top-cities {
+  padding: 40px 20px;
+}
+
+.top-cities-content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.top-cities-content h1 {
+  color: #000; /* Black text for heading */
+  font-size: 36px;
+}
+
+.top-cities-content p {
+  color: #000; /* Black text for paragraph */
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.top-cities-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+
+.card p {
+  font-size: 12px;
+  color: #fff;
+  text-shadow: 0 0 15px #000;
+  margin: 5px 0;
+}
+
+/* Button Styles */
+.button-container {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  margin-top: 30px;
+}
+
+.button {
+  width: 180px;
+  color: white;
+  font-size: 12px;
+  padding: 12px 0;
+  background: black;
+  border: 0;
+  border-radius: 23px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Popular Experiences */
+.popular-experiences {
+  padding: 40px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.experience-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.experience-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+/* Travel Blog */
+.travel-blog {
+  padding: 40px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.blog-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+}
+
+.blog-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 15px;
+}
+
+.blog-content h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.blog-content p {
+  color: #666;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center; /* Center-align the text */
+}
+
+.testimonial-list {
+  display: flex;
+  justify-content: center; /* Center-align the testimonials */
+  gap: 20px; /* Space between the cards */
+  flex-wrap: wrap; /* Wrap to the next line on smaller screens */
+}
+
+.testimonial-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px; /* Adjust width as needed */
+  max-width: 100%;
+  text-align: center; /* Center-align text within the card */
+}
+
+.rating {
+  margin-bottom: 10px; /* Space between stars and feedback */
+}
+
+.star {
+  width: 20px; /* Size of the star image */
+  height: 20px; /* Size of the star image */
+  margin: 0 2px; /* Space between stars */
+}
+
+.testimonial-card p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.testimonial-card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+/* Interactive Map */
+.interactive-map {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+.map-container img {
+  max-width: 80%;
+  height: auto;  
+  max-height: 400px;
+}
+
+/* Newsletter Signup */
+.newsletter-signup {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.newsletter-signup form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-signup input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter-signup button {
+  padding: 10px 20px;
+  background-color: #004a7c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+  background-color: #003566;
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: #003366; /* Dark blue background for the footer */
+  color: #f2f2f2; /* Light grey text color for better contrast */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff; /* White color for headings to stand out */
+}
+
+.footer a {
+  color: #b0c4de; /* Light steel blue color for links */
+  margin: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #87CEFA; /* Light blue color on hover */
+}
+
+.footer p {
+  color: #d3d3d3; /* Light grey color for paragraph text */
+  margin: 5px 10px;
+}
+
+.footer .footer-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer .footer-section {
+  flex: 1;
+  min-width: 200px; /* Ensures that each section takes up at least 200px */
+  margin: 0 10px;
+}
+
+.footer .footer-bottom {
+  border-top: 1px solid #ffffff;
+  padding-top: 10px;
+}
+
+.footer .footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #b0c4de; /* Light steel blue color for bottom text */
+}
+
+.footer .footer-icons {
+  margin-top: 15px;
+}
+
+.footer .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b; /* Dark grey background for icons */
+  border-radius: 50%;
+  font-size: 18px;
+  color: #ffffff; /* White color for icons */
+  text-align: center;
+  line-height: 35px;
+  margin: 0 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer .footer-icons a:hover {
+  background-color: #87CEFA; /* Light blue background on hover */
+  color: #003366; /* Dark blue color on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 880px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-section {
+    margin: 10px 0;
+  }
+
+  .footer .footer-bottom p {
+    font-size: 12px;
+  }
+
+  .footer .footer-icons a {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
